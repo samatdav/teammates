@@ -373,3 +373,16 @@ function updateHoverShowPictureEvents(actualLink, resolvedLink) {
 }
 
 //--------------------------------------------------------------------------
+
+//search function on input in navbar
+$(document).ready(function() {
+    $("#searchInput").keyup(function(event){
+        if(event.keyCode == 13){
+            word = document.getElementById('searchInput').value;
+            if (word != ''){
+                sessionStorage.searchRefr = 1; // meaning search button needs to be clicked on SearchPage.
+                window.location = "/page/instructorSearchPage?searchkey=" + word;
+            } 
+        }
+    });
+});

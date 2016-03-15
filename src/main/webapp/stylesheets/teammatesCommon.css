@@ -817,3 +817,44 @@ Prevent Long URL From Breaking Out of Container
         margin: 10px;
     }
 }
+
+
+
+.searchGroup {
+    width: 150px;
+    padding: 8px;
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  color: #999;
+  position: absolute;
+  padding: 17px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+@media (max-width: 991px) {
+    .searchGroup {
+        margin-left: 7px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .searchGroup {
+        width: 250px;
+        margin-left: 60px;
+    }
+}

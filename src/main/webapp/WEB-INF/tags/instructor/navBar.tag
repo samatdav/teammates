@@ -29,13 +29,16 @@
                 <li<c:if test="${fn:contains(data.class,'Comment')}"> class="active"</c:if>>
                     <a class='nav comments' data-link="instructorComments" href="${data.instructorCommentsLink}">Comments</a>
                 </li>
-                <li<c:if test="${fn:contains(data.class,'Search')}"> class="active"</c:if>>
-                    <a class='nav search' data-link="instructorSearch" href="${data.instructorSearchLink}">
-                        Search
-                    </a>
-                </li>
                 <li>
                     <a class='nav help' href="/instructorHelp.html" target="_blank">Help</a>
+                </li>
+                <li>
+                    <div class="inner-addon left-addon searchGroup">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <input type="text" class="form-control nav" id="searchInput" placeholder="Search for...">
+                    </div>
+
+
                 </li>
             </ul>
             <ul class="nav navbar-nav pull-right">
